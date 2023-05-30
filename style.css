@@ -131,6 +131,7 @@ sidebar{
     height: 67px;
     font-size: 16px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .descriptografar, .com-texto button{
     background-color: #F3F5FC;
@@ -140,4 +141,5 @@ sidebar{
     border: 1px solid #0A3871;
     font-size: 16px;
     color: #0A3871;
+    cursor: pointer;
 }

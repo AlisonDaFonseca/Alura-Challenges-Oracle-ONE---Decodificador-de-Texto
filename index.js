@@ -20,6 +20,7 @@ function criptografar(){
 
     mostrarTela2();
     renderizaTexto(mensagemCriptografada);
+    document.querySelector('.texto textarea').value = "";
     
 }
 
@@ -42,7 +43,6 @@ function descriptografar(){
    let texto3 = texto2.replace(/ai/g, "a");
    let texto4 = texto3.replace(/ober/g, "o");
    let textoDescriptografado = texto4.replace(/ufat/g, "u");
-   console.log(textoDescriptografado)
 
     mostrarTela2();
     renderizaTexto(textoDescriptografado);
@@ -51,5 +51,14 @@ function descriptografar(){
 function copiar(){
     const textoCopiado = document.querySelector('.com-texto span').innerHTML;
     navigator.clipboard.writeText(textoCopiado);
-   
+    document.querySelector('.com-texto span').innerHTML = '';
+
+    mostrarTela1();
+}
+function mostrarTela1(){
+    const tela1 = document.querySelector('.tela1');
+    const tela2 = document.querySelector('.tela2');
+
+    tela1.classList.remove('esconde');
+    tela2.classList.add('esconde');
 }
