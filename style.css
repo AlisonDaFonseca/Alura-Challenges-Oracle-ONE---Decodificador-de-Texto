@@ -48,7 +48,7 @@ sidebar{
     align-items: center;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-    width: 400px;
+    width: 30vw;
     height: 600px;
     position: absolute;
     top: 35px;
@@ -64,10 +64,13 @@ sidebar{
     justify-content: center;
     position: absolute;
 }
-
 .redes img{
     width: 30px;
     margin: 7px;
+    transition: 0.3s ease-in-out;
+}
+.redes img:hover{
+    transform: scale(1.2);
 }
 .sem-texto img{
     width: 300px;
@@ -123,8 +126,8 @@ sidebar{
 .criptografar{
     background-color: #0A3871;
     border-radius: 24px;
-    margin-right: 60px;
-    width: 328px;
+    margin-right: 5vw;
+    width: 25vw;
     height: 67px;
     font-size: 16px;
     color: #FFFFFF;
@@ -132,7 +135,7 @@ sidebar{
 .descriptografar, .com-texto button{
     background-color: #F3F5FC;
     border-radius: 24px;
-    width: 328px;
+    width: 25vw;
     height: 67px;
     border: 1px solid #0A3871;
     font-size: 16px;

@@ -1,0 +1,75 @@
+@media(max-width: 768px){
+    sidebar{
+        position: static;
+        width: 95%;
+        margin: 0 auto;
+        height: auto;
+    }
+    sidebar img{
+        display: none;
+    }
+    .sem-texto{
+        margin: 20px 0;
+    }
+    .com-texto{
+        height: auto;
+        margin: 20px 0;
+    }
+    .com-texto button {
+        width: 600px;
+        margin: 10px auto;
+    }
+    .container-rodape{
+        margin: 30px auto;
+    }
+    .botoes{
+        display: flex;
+    }
+    .container-rodape{
+        margin: 30px auto;
+        align-items: center;
+    }
+    .criptografar, .descriptografar{
+        width: 40vw;
+    }
+    .texto{
+        margin-left: 13vw;
+    }
+    textarea{
+        width: 80vw;
+    }
+}
+@media(max-width: 375px){
+   .botoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .com-texto button {
+        width: 80vw;
+        margin: 10px auto;
+    }
+    .criptografar{
+        margin-right: 0;
+    }
+    .container-rodape span{
+        margin: 0 auto;
+    }
+    .redes{
+        flex-direction: row;
+        position: static;
+        width: 80vw;
+        height: 5vh;
+        margin: 10px auto;
+    }
+    .texto{
+        margin: 0 auto;
+        width: 80vw;
+    }
+    textarea{
+        width: 80vw;
+    }
+    .criptografar, .descriptografar{
+        width: 95vw;
+    }
+}
