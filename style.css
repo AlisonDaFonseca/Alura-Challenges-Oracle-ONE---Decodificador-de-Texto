@@ -55,6 +55,20 @@ sidebar{
     right: 5px;
     background-color: #FFFFFF;
 }
+.redes{
+    width: 60px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.redes img{
+    width: 30px;
+    margin: 7px;
+}
 .sem-texto img{
     width: 300px;
     margin-top: 150px;
@@ -76,8 +90,8 @@ sidebar{
 }
 .com-texto{
     width: 85%;
-    height:90%;
-    margin-top: 30px;
+    height:550px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,6 +100,7 @@ sidebar{
     font-size: 24px;
     color: #495057;
     font-weight: 400;
+    line-height: 36px;
 }
 .container-rodape{
     display: flex;
@@ -122,18 +137,4 @@ sidebar{
     border: 1px solid #0A3871;
     font-size: 16px;
     color: #0A3871;
-}
-footer{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-footer h1{
-    font-size: 16px;
-    font-weight: 700;
-}
-footer img{
-    width: 30px;
-    margin: 7px;
 }

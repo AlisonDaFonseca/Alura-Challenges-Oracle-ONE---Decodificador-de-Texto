@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,47 +9,49 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <title>Decodificador de Texto</title>
 </head>
+
 <body>
     <header>
         <img src="./image/Vector.svg" alt="Logo Alura">
         <h1>DECODIFICADOR DE TEXTO</h1>
     </header>
     <sidebar>
-        <div class="">
-            <div class="sem-texto"> 
+        <div class="tela1">
+            <div class="sem-texto">
                 <img src="./image/High quality products 1 1.svg" alt="">
                 <span>Nenhuma mensagem encontrada</span>
                 <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
             </div>
         </div>
-        
-        <div class="esconde">
+
+        <div class="tela2 esconde">
             <div class="com-texto ">
                 <span></span>
-                <button>Copiar</button>
+                <button onclick="copiar()">Copiar</button>
             </div>
         </div>
-        
     </sidebar>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/alison-santos-40b5b8192/" target="_blank"><img
+                src="./image/linkedin-logotype.svg" alt=""></a>
+        <a href="https://github.com/AlisonDaFonseca" target="_blank"><img src="./image/GitHub-Logo.wine.svg" alt=""></a>
+    </div>
     <div class="texto">
-        <textarea name="" id="" cols="39" rows="10" placeholder="Digite seu texto"></textarea>
+        <textarea id="texto" cols="39" rows="10" placeholder="Digite seu texto"></textarea>
     </div>
     <div class="container-rodape">
-        <span><img src="./image/icone.svg"/>Apenas letras minúsculas e sem acento</span>
+        <span><img src="./image/icone.svg" />Apenas letras minúsculas e sem acento</span>
         <div class="botoes">
-            <button class="criptografar">Criptografar</button>
-            <button class="descriptografar">Descriptografar</button>
+            <button class="criptografar" onclick="criptografar()">Criptografar</button>
+            <button class="descriptografar" onclick="descriptografar()">Descriptografar</button>
         </div>
     </div>
-    <footer>
-        <h1>Redes do desenvolvedor</h1>
-        <div>
-            <a href="https://www.linkedin.com/in/alison-santos-40b5b8192/" target="_blank"><img src="./image/linkedin-logotype.svg" alt=""></a>
-            <a href="https://github.com/AlisonDaFonseca" target="_blank"><img src="./image/GitHub-Logo.wine.svg" alt=""></a> 
-        </div>
-    </footer>
+    <script src="./index.js"></script>
 </body>
+
 </html>
